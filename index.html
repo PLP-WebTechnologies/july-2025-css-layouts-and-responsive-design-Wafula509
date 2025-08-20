@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox and Grid</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Page</h1>
+        <p>A demonstration of Flexbox and CSS Grid.</p>
+    </header>
+
+    <!-- The container element wraps the main content and sidebar -->
+    <div class="container">
+        <!-- The main content area uses CSS Grid for its layout -->
+        <main class="main-content">
+            <article class="hero-section">
+                <h2>Welcome to Our Site</h2>
+                <p>This is the hero section. The main layout is powered by CSS Grid, which is perfect for creating a structured, two-dimensional design that adapts beautifully to different screen sizes.</p>
+            </article>
+
+            <!-- This section uses Flexbox to align content within its container -->
+            <section class="cards-section">
+                <h2>Our Services</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Service 1</h3>
+                        <p>This card demonstrates Flexbox for alignment and spacing. It ensures the cards distribute space evenly.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Service 2</h3>
+                        <p>Flexbox makes it easy to create a one-dimensional layout, either in a row or a column, that wraps automatically.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Service 3</h3>
+                        <p>On smaller screens, these cards will stack vertically for better readability and user experience.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <h3>About This Page</h3>
+            <p>This sidebar is an integral part of the main grid layout. On smaller devices, it will either move below the main content or be hidden, depending on the media queries.</p>
+            <p>It helps organize auxiliary content away from the main focus of the page.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Responsive Design Showcase. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
